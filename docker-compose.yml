@@ -1,0 +1,18 @@
+
+services:
+  web:
+    build: .
+    ports:
+      - "4242:4242"
+    volumes:
+      - .:/code
+    depends_on:
+      - redis
+  redis:
+     image: redislabs/redismod
+     ports:
+       - '6379:6379'
+  redisinsight:
+    image: redislabs/redisinsight:latest
+    ports:
+    - '8001:8001'

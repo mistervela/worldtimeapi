@@ -61,6 +61,16 @@ it will output a JSON response like this:
  }
 ```
 
+## The Redis Server
+The Redis server needs to be installed and run. Without the Redis service this microservice won't run. 
+
+Mac OS
+
+[https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/](https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/)
+
+Windows
+
+[https://redis.io/docs/getting-started/installation/install-redis-on-windows/](https://redis.io/docs/getting-started/installation/install-redis-on-windows/)
 
 ## Docker
 Just execute the Docker Compose command:

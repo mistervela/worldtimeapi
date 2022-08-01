@@ -9,10 +9,10 @@ services:
     depends_on:
       - redis
   redis:
-     image: redislabs/redismod
+     image: redis
+     environment:
+        # ALLOW_EMPTY_PASSWORD is recommended only for development.
+         - ALLOW_EMPTY_PASSWORD=yes
+         - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
      ports:
        - '6379:6379'
-  redisinsight:
-    image: redislabs/redisinsight:latest
-    ports:
-    - '8001:8001'

@@ -26,7 +26,7 @@ logger = logging.getLogger()
 # INITIALIZE REDIS CLIENT
 
 redis_client = Redis(
-    host='localhost',
+    host='redis',
     port='6379')
 
 
